@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times Table Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lilita+One&family=Roboto:wght@100&display=swap" rel="stylesheet">  
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- JavaScript Link -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Times Table Generator</h1>
+    </header>
+
+    <section class="main-content">
+
+        <!-- sidebar with tally -->
+        <div class="tally">
+            <table>
+                <h4 class="table-title">Total Score</h4>
+                <tr>
+                    <th>Total Questions</th>
+                    <td class="total-questions">0</td>
+                </tr>
+                <tr>
+                    <th>Correct Answers</th>
+                    <td class="correct-answers">0</td>
+                </tr>
+                <tr>
+                    <th>Score Percentage</th>
+                    <td class="score-percentage">%</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Question and answer section -->
+        <div class="question">
+            <h3 class="sum">Press Start to begin the challenge...</h3>
+        </div>
+        
+        <div class="answer">
+            <input class="user-answer" onkeyup="disableButton()" type="text" required>
+            <button class="btn" onclick="userAnswer()" type="submit">Start</button>
+        </div>
+        
+    </section>
+              
+</body>
+</html>

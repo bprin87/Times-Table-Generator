@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower';
+}
+
+body {
+    background-color: #fff3cd;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 2rem;
+}
+
+.header, .tally, .question, input[type="text"] {
+    color: #198754;
+}
+
+/* Tally Section */
+
+.tally {
+    margin-left: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin-top: 10px;
+}
+
+.table-title {
+    font-size: 2rem;
+}
+
+th, td {
+    border: 1px solid #198754;
+    font-size: 1.4rem;
+    color:#fff;
+    background-color: #198754;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+    width: 50px;
+    text-align: center;
+    width: 100px;
+}
+
+/* Question and Answer Section */
+
+.question, .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.question {
+    font-size: 1.8rem;
+}
+
+/* class added via JS */
+.hide-sum {
+    display: none;
+}
+
+.answer {
+    margin-top: 100px;
+}
+
+input[type="text"], input[type="text"]:hover {
+    height: 52px;
+    width: 150px;
+    padding-left: 10px;
+    background-color: white;
+    border: solid 1px #198754;
+    cursor: auto;
+    outline: #198754;
+}
+
+/* hide input until start button is clicked */
+
+.user-answer {
+    display: none;
+}
+
+.user-answer.btn {
+    display: block;
+}
+
+.btn {
+    margin-left: 5px;
+    padding: 12px 10px;
+    width: 150px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #157347;
+}
+
+
+/* Smaller Screen */
+
+@media only screen and (max-width: 1500px) {
+   
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .tally {
+        margin-top: 60px;
+    }
+
+    .question, .answer {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1281px) {
+
+    .header {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    body {
+        max-width: 50%;
+    }
+
+    .header {
+        font-size: 1.4rem;
+    }
+
+    .table-title {
+        font-size: 1.5rem;
+    }
+
+    th, td {
+        font-size: 1.2rem;
+    }
+
+    .question {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"], input[type="text"]:hover {
+        height: 44px
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 8px;
+    }
+}
