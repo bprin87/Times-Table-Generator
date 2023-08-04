@@ -1,7 +1,7 @@
 # Times-Table-Generator
-Multiplication game which generates sums at random.
+Simple multiplication game which generates sums at random.
 
-The game has been built using HTML, CSS, and JavaScript. 
+The game has been built using HTML, CSS, and JavaScript. Initially the idea was to create a random quote generator but I wanted to build something a bit more interesting in order to improve my knowledge of the Document Object Model.
 
 Here's a demonstration: 
 
